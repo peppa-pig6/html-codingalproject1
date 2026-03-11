@@ -1,0 +1,73 @@
+body {
+
+margin: 0;
+
+font-family: Arial, sans-serif;
+
+}
+
+/* Header styling */
+
+header {
+
+background-color: #ff0000; /* Dark background */
+
+color: white; /* White text */
+
+padding: 15px 20px;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+}
+
+/* Heading inside header */
+
+header h1 {
+
+margin: 0;
+
+font-size: 24px;
+
+}
+
+/* Navigation menu styling */
+
+nav ul {
+
+list-style: none; /* Remove bullets */
+
+margin: 0;
+
+padding: 0;
+
+display: flex; /* Horizontal layout */
+
+}
+
+nav ul li {
+
+margin-left: 20px; /* Space between items */
+
+}
+
+nav ul li a {
+
+text-decoration: none; /* Remove underline */
+
+color: white; /* White links */
+
+font-weight: bold;
+
+transition: color 0.3s; /* Smooth hover effect */
+
+}
+
+nav ul li a:hover {
+
+color: #ff9800; /* Orange hover color */
+
+}
