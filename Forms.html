@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lol</title>
+    </head>
+    <body>
+
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>Name:</label>
+                <input type="text">
+                <br>
+                <label>Gender</label>
+                <br>
+                <input type="radio">female<br><input type="radio">male<br><input type="radio">cat<br>
+                <label>Age</label>
+                <br>
+                <input type="number">
+                <br>
+                <label>Email</label>
+                <input type="text" placeholder="eg@gmail.com">
+                <br>
+                <label>Birthday</label>
+                <input type="date">
+                <br>
+                <label>Subject</label>
+                <select><option>Maths</option>
+                <option>Sciences</option>
+                <option>English</option>
+                </select>
+            </fieldset>
+        </form>
+        <a href="Scam.html">
+        <button> Click Here for free money!</button>
+        </a>
+        <script>
+
+// Allow radio buttons to be deselected
+
+document.querySelectorAll('input[type="radio"]').forEach(radio => {
+
+radio.addEventListener('click', function() {
+
+if (this.checked && this.dataset.waschecked === "true") {
+
+this.checked = false;
+
+this.dataset.waschecked = "false";
+
+} else {
+
+document.querySelectorAll('input[name="' + this.name + '"]').forEach(r => r.dataset.waschecked = "false");
+
+this.dataset.waschecked = "true";
+
+}
+
+});
+
+});
+
+</script>
+    </body>
+</html>
