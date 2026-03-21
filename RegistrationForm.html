@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+       <form style="font-size: large;">
+            <fieldset>
+                <legend style="font-size: x-large;">Application Form</legend>
+                <br>
+                <label>Candidate Name:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Gender:</label>
+                <input type="radio">female<input type="radio">male<br>
+                <br>
+                <label>Age:</label>
+                <input type="number">
+                <br>
+                <br>
+                <label>Guardian's Email</label>
+                <input type="text" placeholder="eg@gmail.com">
+                <br>
+                <br>
+                <label>Candidate's D.O.B:</label>
+                <input type="date">
+                <br>
+                <br>
+                <label>Chosen Stream:</label>
+                <select><option>Science</option>
+                <option>Commerce</option>
+                <option>Arts/Humanities</option>
+                </select>
+                <br>
+                <br>
+                <label>Optional Subjects:</label>
+                <select><option>Sociology</option>
+                <option>Economics</option>
+                <option>Art & Design</option>
+                <option>Computer Science</option>
+                <option>Physical Education</option>
+                </select>
+            </fieldset>
+        </form>
+        <a href="Done.html">
+        <button>Submit Form</button>
+        </a>
+                <script>
+
+document.querySelectorAll('input[type="radio"]').forEach(radio => {
+
+radio.addEventListener('click', function() {
+
+if (this.checked && this.dataset.waschecked === "true") {
+
+this.checked = false;
+
+this.dataset.waschecked = "false";
+
+} else {
+
+document.querySelectorAll('input[name="' + this.name + '"]').forEach(r => r.dataset.waschecked = "false");
+
+this.dataset.waschecked = "true";
+
+}
+
+});
+
+});
+
+                </script>
+</body>
+</html>
