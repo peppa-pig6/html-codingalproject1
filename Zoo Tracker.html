@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoo Rescue Tracker</title>
+  <style>
+
+    body {
+      font-family: "Courier New", Arial;
+      background-color: lightgreen;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkgreen;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    h2 {
+      color: green;
+      text-decoration: underline;
+    }
+
+    .alert {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background: green;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      z-index: 100;
+    }
+
+    /* standard animal box */
+    .animal {
+      background-color: white;
+      border: 3px solid green;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 250px;
+    }
+
+    /* shifted koala box */
+    .moved {
+      position: relative;
+      left: 40px;
+      background-color: yellow; 
+    }
+
+    /* panda container */
+    .card {
+      position: relative;
+      background-color: white;
+      border: 2px solid black;
+      padding: 30px;
+      width: 200px;
+      height: 80px;
+    }
+
+    /* safe tag for panda */
+    .tag {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: red;
+      color: white;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .zone {
+      position: sticky;
+      top: 50px;
+      background: darkgreen;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    .case {
+      background: white;
+      border: 1px solid gray;
+      padding: 10px;
+      width: 250px;
+      margin-top: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="alert">Zoo Rescue Alert</div>
+
+  <br><br><br>
+
+  <h1>Zoo Rescue Tracker</h1>
+
+  <br>
+
+  <h2>Different Habitats(Using Static Positioning)</h2>
+  <br>
+  <div class="animal">Lion - Grassland habitat</div>
+  <div class="animal">Elephant - Rainforest habitat</div>
+  <div class="animal">Penguin - Aquatic habitat</div>
+
+
+  <h2>Improvements for Rescued Animals Habitats(Using Relative Positioning)</h2>
+  <br>
+  <div class="animal">Giraffe - Checkup pending</div>
+  <div class="animal moved">Rescued Koala - Safe</div>
+  <div class="animal">Zebra - Feeding zone</div>
+
+  <br>
+
+  <h2>Panda Medical Record(Using Absolute Positioning)</h2>
+  <div class="card">
+    <b>Panda</b><br>
+    Medical check complete
+    <div class="tag">SAFE</div>
+  </div>
+
+  <br><br>
+
+  <h2>Rescue Zone Cases(Using Sticky Positioning)</h2>
+
+  <br>
+
+  <div class="zone">Rescue Zone Cases</div>
+
+  <div class="case">Tiger - Observation</div>
+  <div class="case">Deer - Released</div>
+  <div class="case">Owl - Night care</div>
+  <div class="case">Turtle - Shell treatment</div>
+  <div class="case">Rabbit - Healthy</div>
+  <div class="case">Flamingo - Wing check</div>
+  <div class="case">Monkey - Play area</div>
+  <div class="case">Horse - Recovery stable</div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
