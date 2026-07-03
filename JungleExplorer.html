@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Jungle Explorer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body { 
+      position: relative; 
+      background: #0f2a0f;
+      color: #d4e8c0;
+    }
+    .jungle-slide { 
+      height: 280px; 
+      text-align: center; 
+      padding-top: 100px; 
+      font-size: 2rem; 
+      color: white; 
+      font-weight: bold;
+    }
+    .slide-canopy  { background: #1e4d1e; }
+    .slide-river   { background: #1e3a5f; }
+    .slide-wild    { background: #3d2b1f; }
+    
+    .section { 
+      padding: 70px 20px; 
+      min-height: 400px; 
+    }
+    #canopy { background: #1a3c1a; }
+    #river  { background: #1a2f4d; }
+    #wild   { background: #2e2218; }
+    
+    .navbar { background: #112211 !important; }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#jungleNav" data-offset="60">
+
+  <div id="jungleCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#jungleCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#jungleCarousel" data-slide-to="1"></li>
+      <li data-target="#jungleCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active jungle-slide slide-canopy">🌿 Jungle Canopy</div>
+      <div class="carousel-item jungle-slide slide-river">🌊 Misty River</div>
+      <div class="carousel-item jungle-slide slide-wild">🐒 Wildlife</div>
+    </div>
+    <a class="carousel-control-prev" href="#jungleCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#jungleCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <nav id="jungleNav" class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <span class="navbar-brand">🌴 Jungle Explorer</span>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#canopy">Canopy</a></li>
+      <li class="nav-item"><a class="nav-link" href="#river">River</a></li>
+      <li class="nav-item"><a class="nav-link" href="#wild">Wildlife</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div id="canopy" class="section">
+      <h2>🌿 Jungle Canopy</h2>
+      <p>Tall trees reach high into the sky. Monkeys swing from branch to branch and birds call from above.</p>
+    </div>
+    
+    <div id="river" class="section">
+      <h2>🌊 Misty River</h2>
+      <p>The river winds through the jungle. Crocodiles hide near the banks while colorful fish swim below.</p>
+    </div>
+    
+    <div id="wild" class="section">
+      <h2>🐒 Wildlife</h2>
+      <p>Spot jaguars, parrots, and giant butterflies. The jungle is full of hidden creatures.</p>
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
