@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+</head>
+
+<body>
+    <h1>Understanding Scopes in Programming</h1>
+    <p>In programming, scope refers to the context in which variables and functions are accessible. There are different
+        types of scopes, including global scope, local scope, and block scope.</p>
+
+    <h2>Local Scope</h2>
+
+    <p>Variables declared within a function are in the local scope and can only be accessed within that function.</p>
+
+    <button onclick="myFunction()">Click Me!</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        var b = 5;
+
+        function myFunction() {
+            var a = 4;
+            document.getElementById("demo").innerHTML = b * a;
+        }
+        document.getElementById("demo1").innerHTML = a;
+        document.getElementById("demo2").innerHTML = b;
+    </script>
+</body>
+
+</html>
